@@ -1,0 +1,48 @@
+/* reset.css */
+@import url(reset.css);
+
+
+/* :root */
+:root {
+  /* colors */
+  --colorWhite: #fff;
+  --colorBlack: #000c30;
+  --colorDarkGray: #666;
+  --ColorLigthGray: #ccc;
+}
+
+.box {
+  width: 100vw;
+  height: 100vh;
+
+  /* bg - global */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+/* bg - id */
+#bg_sp {
+  background-image: url(img/sao_paulo.jpg);
+}
+
+#bg_tk {
+  background-image: url(img/tokyo.jpg);
+}
+
+#bg_ny {
+  background-image: url(img/new_york.jpg);
+}
+
+#bg_fr {
+  background-image: url(img/france.jpg);
+}
+
+#bg_nl {
+  background-image: url(img/netherlands.jpg);
+}
+
+#bg_db {
+  background-image: url(img/dubai.jpg);
+}
