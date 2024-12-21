@@ -2,18 +2,53 @@
 @import url(reset.css);
 
 
+/* imports fonts */
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
+
 /* :root */
 :root {
   /* colors */
   --colorWhite: #fff;
-  --colorBlack: #000c30;
+  --colorBlack: #00030c;
   --colorDarkGray: #666;
   --ColorLigthGray: #ccc;
+  --colorTrasluced: #ffffff50;
+
+  /* fonts customs */ 
+  --FontFrance: "Borel", serif;
+  --FontNetherLands: "Sour Gummy", serif;
+  --FontTokyo: "Delius Unicase", serif;
+  --FontSaoPaulo: "Chewy", serif;
+  --FontDubai: "Sarina", serif;
+  --FontNewYork: "Lily Script One", serif;
 }
 
-.box {
+
+/* global */
+body {
   width: 100vw;
+  overflow-x: hidden;
+}
+
+
+/* global text */
+h1 {
+  color: var(--colorBlack);
+  font-size: 64px;
+}
+
+
+/* customs */
+.box {
   height: 100vh;
+  display: flex;
+
 
   /* bg - global */
   background-repeat: no-repeat;
@@ -21,28 +56,79 @@
   background-size: cover;
 }
 
+.box > div {
+  width: 50%;
+}
+
+.box > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box > div:nth-child(1) > h1 {
+  padding: 2.4em;
+  background: radial-gradient(circle, var(--colorTrasluced) 20%, transparent 50%);
+}
+
+
 
 /* bg - id */
+/* sp */
 #bg_sp {
   background-image: url(img/sao_paulo.jpg);
 }
 
+#bg_sp > div:nth-child(1) > h1 {
+  font-family: var(--FontSaoPaulo);
+}
+
+
+/* tokyo */
 #bg_tk {
   background-image: url(img/tokyo.jpg);
 }
 
+#bg_tk > div:nth-child(1) > h1 {
+  font-family: var(--FontTokyo);
+}
+
+
+/* new york */
 #bg_ny {
   background-image: url(img/new_york.jpg);
 }
 
+#bg_ny > div:nth-child(1) > h1 {
+  font-family: var(--FontNewYork);
+}
+
+
+/* farnce */
 #bg_fr {
   background-image: url(img/france.jpg);
 }
 
+#bg_fr > div:nth-child(1) > h1 {
+  font-family: var(--FontFrance);
+}
+
+
+/* netherlands */
 #bg_nl {
   background-image: url(img/netherlands.jpg);
 }
 
+#bg_nl > div:nth-child(1) > h1 {
+  font-family: var(--FontNetherLands);
+}
+
+
+/* dubai */
 #bg_db {
   background-image: url(img/dubai.jpg);
+}
+
+#bg_db > div:nth-child(1) > h1 {
+  font-family: var(--FontDubai);
 }
